@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo Decorators em Python</title>
+    <style>
+        :root {
+            --primary-color: #3776ab;
+            --secondary-color: #ffd43b;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --code-bg: #282c34;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            font-size: 1.1em;
+            background: #eef4f8;
+            padding: 15px;
+            border-left: 5px solid var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: "●";
+            position: absolute;
+            left: 0;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .code-block {
+            background-color: var(--code-bg);
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .code-keyword { color: #c678dd; }
+        .code-func { color: #61afef; }
+        .code-deco { color: #d19a66; }
+        .code-comment { color: #5c6370; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Decorators em Python</h1>
+    
+    <div class="intro">
+        Um <strong>decorator</strong> é uma função que recebe outra função como parâmetro e estende ou modifica seu comportamento sem alterar o código original da função decorada.
+    </div>
+
+    <h2>Por que utilizar?</h2>
+    <ul>
+        <li><strong>Adicionar funcionalidades extras:</strong> Logs, cálculo de tempo de execução, verificação de permissões ou cache de resultados.</li>
+        <li><strong>Reutilizar código:</strong> Evita a repetição (princípio <em>DRY - Don't Repeat Yourself</em>) aplicando a mesma lógica a diversas funções.</li>
+        <li><strong>Metaprogramação:</strong> Permite alterar o comportamento de funções ou classes de forma limpa e expressiva.</li>
+    </ul>
+
+    <h2>Exemplo de Sintaxe</h2>
+    <div class="code-block">
+        <span class="code-deco">@meu_decorator</span><br>
+        <span class="code-keyword">def</span> <span class="code-func">minha_funcao</span>():<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">pass</span> <span class="code-comment"># A função original permanece intacta</span>
+    </div>
+</div>
+
+</body>
+</html>

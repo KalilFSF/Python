@@ -1,0 +1,20 @@
+
+Crie uma aplicação Flask que contenha uma rota específica responsável por explicar o conceito de decorator em Python.
+Requisitos
+Crie uma rota acessível por meio do caminho: /decorator
+Ao acessar essa rota no navegador, deve ser exibido um texto explicando:
+O que é um decorator em Python
+Para que ele serve
+Como ele é utilizado no Flask (exemplo: @app.route)
+
+Um decorator em Python é uma função que recebe outra função como parâmetro e estende ou modifica seu comportamento sem alterar o código original da função decorada.
+
+Os decorators são amplamente usados para:
+- Adicionar funcionalidades extras: Adicionar logs, calcular tempo de execução, verificar permissões ou cachear resultados.
+- Reutilizar código: Evitar repetição (princípio DRY - Don't Repeat Yourself) aplicando a mesma lógica a diversas funções.
+- Metaprogramação: Alterar o comportamento de funções ou classes de forma limpa e expressiva.
+
+Exemplo de Sintaxe: 
+@meu_decorator
+def minha_funcao():
+    pass
