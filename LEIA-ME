@@ -1,0 +1,29 @@
+<!--Esse template herda no extends o layout.html
+ELe tem estruturas básicas de layout-->
+
+{% extends 'layout.html' %}
+
+
+{% block title %}
+
+Meus Projetos
+
+
+
+{% endblock %}
+
+{% block content %}
+<h1>Veja Aqui meus projetos</h1>
+
+<p>Conteúdo de página sobre o Flask
+
+    O Flask é um microframework para Python baseado em Werkzeug e Jinja2. Ele é leve e flexível, permitindo que os desenvolvedores criem aplicações web de forma simples e rápida. O Flask oferece recursos essenciais para o desenvolvimento web, como roteamento, manipulação de requisições e respostas, e suporte a templates.
+
+<ul>
+    <li><a href="https://kalilfsf.github.io/Portifolio-KalilFSF/">Projeto 1: Portifolio</a></li>
+    <li><a href="https://kalilfsf.github.io/Belara-Arquitetura/">Projeto 2: Belara Arquitetura</a></li>
+    <li><a href="https://kalilfsf.github.io/Pixxel-Shop/">Projeto 3: Pixel Shop</a></li>
+    <li><a href="https://kalilfsf.github.io/Tulen-Photography-HTML-Template/">Projeto 4: Photography</a></li>
+</ul>
+</p>
+{% endblock %}
