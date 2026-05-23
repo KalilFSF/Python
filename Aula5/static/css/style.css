@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+
+
+}
+
+.menu {
+    width: 200px;
+    background-color: #170e49;
+    padding: 20px;
+    height: 100vh;
+    width: 13vh;
+    position: fixed;
+}
+
+.content {
+    margin-left: calc(13vh + 40px);
+    background-color: rgb(224, 221, 210);
+    height: 100vh;
+    width: 100%;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.menu ul {
+    list-style-type: nome;
+    padding: 0;
+}
+
+
+.menu ul li a {
+    text-decoration: nome;
+    color: rgb(224, 221, 210);
+    display: block;
+    padding: 10px 0;
+
+}
