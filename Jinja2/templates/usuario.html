@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+    <title>
+        {% block title %}
+        Dados do Usuário
+        {% endblock %}
+    </title>
+</head>
+<body>
+    {% block content %}
+        <h2>Perfil do Usuário</h2>
+    <p><strong>Nome:</strong> {{ user.nome }} | <strong>E-mail:</strong> {{ user.email }}</p>
+    {% endblock %}
+
+</body>
+</html>
+

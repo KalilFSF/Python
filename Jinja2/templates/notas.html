@@ -1,0 +1,30 @@
+
+    
+        <!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+    <title>
+        {% block title %}
+        Dados do Usuário
+        {% endblock %}
+    </title>
+</head>
+<body>
+    
+{% block content %}
+    <h2>Boletim Escolar</h2>
+    <ul>
+        {% for aluno in alunos %}
+            <li>
+                <strong>{{ aluno.nome }}</strong>: 
+                {{ aluno.notas | join(', ') }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+</body>
+</html>
+
+    
